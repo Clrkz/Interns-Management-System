@@ -22,9 +22,9 @@ public class MailSender {
     /*
     public static void main(String[] args) {
         // TODO code application logic here
-        String username = "143Clarkz@gmail.com";
-        String password = "09105242584Cat12345";
-        String recipientEmail = "bytehax@gmail.com";
+        String username = "";
+        String password = "";
+        String recipientEmail = "";
         //String filename = "a.jpg";
         String message = "Paste this code: ";
         sendEmail(username,password,recipientEmail,message);

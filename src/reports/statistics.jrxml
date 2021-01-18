@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c03f4aae-c124-412e-bbd8-f9fd14cb5c69">
+	<property name="ireport.zoom" value="0.7513148009015781"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Times New Roman" fontSize="50" isBold="false" pdfFontName="Times-Bold"/>
+	<style name="SubTitle" forecolor="#CCCCCC" fontName="Times New Roman" fontSize="18" isBold="false" pdfFontName="Times-Roman"/>
+	<style name="Column header" forecolor="#666666" fontName="Times New Roman" fontSize="14" isBold="true" pdfFontName="Times-Roman"/>
+	<style name="Detail" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman"/>
+	<style name="Row" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style mode="Opaque" backcolor="#F0EFEF"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="Image" class="Object" isForPrompting="false">
+		<defaultValueExpression><![CDATA["reports/default.jpg"]]></defaultValueExpression>
+	</parameter>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="523" splitType="Stretch">
+			<staticText>
+				<reportElement style="Title" x="102" y="32" width="453" height="31" forecolor="#000000" uuid="514ecdbc-53f7-4543-9f00-e6e164ce61b2"/>
+				<textElement textAlignment="Left">
+					<font size="26" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Career Development and Placement Office]]></text>
+			</staticText>
+			<image>
+				<reportElement x="4" y="0" width="89" height="95" uuid="814e1bf3-7079-4f46-89d5-59eefb494fa0"/>
+				<imageExpression><![CDATA["reports/cherry.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement style="SubTitle" x="102" y="5" width="264" height="26" forecolor="#000000" uuid="40360f3a-9f91-41be-ab62-551c01c34d13"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="22" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Taguig City University]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="102" y="63" width="368" height="26" forecolor="#000000" uuid="03873ff6-ff7d-4287-abc2-86a5c06565ca"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="16" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Gen. Santos Ave, Central Bicutan, Taguig City]]></text>
+			</staticText>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="101" width="802" height="26" forecolor="#000000" backcolor="#547FCE" uuid="24286aa6-5923-41ea-b689-14b2bf44b6e1"/>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement x="394" y="5" width="401" height="20" forecolor="#FFFFFF" uuid="0c840922-5820-482b-a30a-18602a31eeb4"/>
+					<textElement textAlignment="Right">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement style="SubTitle" x="5" y="0" width="263" height="26" forecolor="#FFFFFF" uuid="c6539fdb-5c1c-4720-9ba9-dd696e7e1daf"/>
+					<textElement>
+						<font fontName="Arial" size="20" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Statistics]]></text>
+				</staticText>
+			</frame>
+			<image scaleImage="FillFrame" hAlign="Center" vAlign="Middle" onErrorType="Blank">
+				<reportElement x="0" y="127" width="802" height="396" uuid="4c270ba1-803b-4b48-8393-d1419734794e"/>
+				<imageExpression><![CDATA[$P{Image}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnFooter>
+		<band height="7" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="efbcb9e2-5db3-4e70-beae-492c8bb2beaa"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="802" height="25" forecolor="#D0B48E" backcolor="#000000" uuid="e9f170e7-d96f-4fbf-ba06-0a9984661b20"/>
+				<textField evaluationTime="Report">
+					<reportElement style="Column header" x="757" y="3" width="40" height="20" forecolor="#FFFFFF" uuid="4941159d-959e-4d13-94fa-bb5d7a1e6ead"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Column header" x="677" y="3" width="80" height="20" forecolor="#FFFFFF" uuid="f8ff293d-1f03-4990-97ef-8f86f4a30b9e"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+				</textField>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement style="Column header" x="2" y="3" width="197" height="20" forecolor="#FFFFFF" uuid="34b2e1a3-cabf-4554-b8fb-4a5f0cfb9644"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,5 @@
+max_allowed_packet
+innodb_log_file_size 
+/* wala na  yang sa baba */
+mysql -u root -p
+mysql -u root -p -v cdpo_db < "E:/cdpo_db.sql" //directory of the file

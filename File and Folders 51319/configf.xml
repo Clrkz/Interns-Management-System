@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\Users\Clrkz\Desktop\CDPO System.jar</jar>
+  <outfile>C:\Users\Clrkz\Desktop\Internship Management.exe</outfile>
+  <errTitle>Download Latest Java Version</errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl>https://facebook.com/143Clarkz</supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>true</restartOnCrash>
+  <manifest></manifest>
+  <icon>E:\MYFILES BACKUP\Pictures\logo_jmo_1_GvN_icon.ico</icon>
+  <classPath>
+    <mainClass>f.Zz</mainClass>
+    <cp>lib/AbsoluteLayout.jar</cp>
+    <cp>lib/JTattoo-1.6.11.jar</cp>
+    <cp>lib/barcode4j-2.1.jar</cp>
+    <cp>lib/com-jaspersoft-ireport-components.jar</cp>
+    <cp>lib/com-jaspersoft-ireport-jasperserver.jar</cp>
+    <cp>lib/com-jaspersoft-ireport.jar</cp>
+    <cp>lib/com-jaspersoft-jrx.jar</cp>
+    <cp>lib/com.mysql.jdbc_5.1.5.jar</cp>
+    <cp>lib/commons-beanutils-1.8.2.jar</cp>
+    <cp>lib/commons-collections-3.2.1.jar</cp>
+    <cp>lib/commons-digester-2.1.jar</cp>
+    <cp>lib/commons-javaflow-20060411.jar</cp>
+    <cp>lib/commons-logging-1.1.jar</cp>
+    <cp>lib/dom4j-1.6.jar</cp>
+    <cp>lib/groovy-all-2.0.1.jar</cp>
+    <cp>lib/iText-2.1.7.js2.jar</cp>
+    <cp>lib/iTextAsian.jar</cp>
+    <cp>lib/icepdf-core-4.3.3.jar</cp>
+    <cp>lib/icepdf-core-6.2.2.jar</cp>
+    <cp>lib/icepdf-viewer-4.3.3.jar</cp>
+    <cp>lib/icepdf-viewer-6.2.2.jar</cp>
+    <cp>lib/itext-2.1.7.jar</cp>
+    <cp>lib/jasper-compiler-jdt.jar</cp>
+    <cp>lib/jasperreports-5.0.1.jar</cp>
+    <cp>lib/javax.mail.jar</cp>
+    <cp>lib/jcalendar-1.4.jar</cp>
+    <cp>lib/jce.jar</cp>
+    <cp>lib/jcommon-1.0.17.jar</cp>
+    <cp>lib/jfreechart-1.0.19.jar</cp>
+    <cp>lib/jtds-1.3.1.jar</cp>
+    <cp>lib/log4j-1.2.15.jar</cp>
+    <cp>lib/rs2xml.jar</cp>
+  </classPath>
+  <jre>
+    <path>bin/jre1.8.0_201</path>
+    <bundledJre64Bit>false</bundledJre64Bit>
+    <bundledJreAsFallback>false</bundledJreAsFallback>
+    <minVersion></minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <runtimeBits>64/32</runtimeBits>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.0.0.6</fileVersion>
+    <txtFileVersion>1006</txtFileVersion>
+    <fileDescription>CDPO Internship Management</fileDescription>
+    <copyright>Clarence Andaya</copyright>
+    <productVersion>1.0.0.6</productVersion>
+    <txtProductVersion>1006</txtProductVersion>
+    <productName>Internship Management</productName>
+    <companyName>Clarence Andaya</companyName>
+    <internalName>Career Development and Placement Office</internalName>
+    <originalFilename>Internship Management.exe</originalFilename>
+    <trademarks></trademarks>
+    <language>ENGLISH_US</language>
+  </versionInfo>
+</launch4jConfig>
